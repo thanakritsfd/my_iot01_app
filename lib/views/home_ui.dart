@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_iot01_app/views/login_ui.dart';
 import 'package:my_iot01_app/views/signup_ui.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeUI extends StatefulWidget {
   const HomeUI({super.key});
@@ -22,7 +23,7 @@ class _HomeUIState extends State<HomeUI> {
             child: Column(
               children: [
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.1,
+                  height: MediaQuery.of(context).size.height * 0.15,
                 ),
                 Image.asset(
                   'assets/images/logo.png',
@@ -37,16 +38,18 @@ class _HomeUIState extends State<HomeUI> {
               children: [
                 Text(
                   'Build Awesome Apps',
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     fontWeight: FontWeight.bold,
                     fontSize: MediaQuery.of(context).size.height * 0.03,
                   ),
                 ),
                 Text(
                   'Southeast Asia University 2024',
+                  style: GoogleFonts.poppins(),
                 ),
                 Text(
                   'IoT SAU',
+                  style: GoogleFonts.poppins(),
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.04,
@@ -71,13 +74,17 @@ class _HomeUIState extends State<HomeUI> {
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow,
+                        backgroundColor: Colors.yellow[600],
                         fixedSize: Size(
-                          MediaQuery.of(context).size.width * 0.35,
+                          MediaQuery.of(context).size.width * 0.4,
                           MediaQuery.of(context).size.height * 0.06,
                         ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
+                        ),
+                        side: const BorderSide(
+                          width: 1,
+                          color: Colors.black,
                         ),
                       ),
                     ),
@@ -103,7 +110,7 @@ class _HomeUIState extends State<HomeUI> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.black,
                         fixedSize: Size(
-                          MediaQuery.of(context).size.width * 0.35,
+                          MediaQuery.of(context).size.width * 0.4,
                           MediaQuery.of(context).size.height * 0.06,
                         ),
                         shape: RoundedRectangleBorder(
